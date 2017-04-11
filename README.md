@@ -1,6 +1,6 @@
 # h265ize
 
-A [Docker](http://docker.com) image for [h265ize](https://github.com/FallingSnow/h265ize), to make it easy to convert vidoes to h.265.
+A [Docker](http://docker.com) image for [h265ize](https://github.com/FallingSnow/h265ize), to make it easy to convert videos to h.265.
 
 [![](https://images.microbadger.com/badges/image/adriel/h265ize.svg)](https://microbadger.com/images/adriel/h265ize)
 ## Getting Started
@@ -60,7 +60,7 @@ It's [recommended](https://github.com/nodejs/docker-node/blob/master/docs/BestPr
 docker run -d --init \
   --name h265ize \
   -e "NODE_ENV=production" \
-  -u "$(id -u)" \
+  -u <UID> \
   -m "300M" --memory-swap "1G" \
   --restart unless-stopped \
   -v /home/yo/dockers/h265ize/docker_files/input:/input \
