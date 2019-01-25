@@ -12,4 +12,4 @@ RUN apk add --no-cache --update-cache git ffmpeg && \
 VOLUME ["/input", "/output"]
 WORKDIR /h265ize
 
-ENTRYPOINT ["/usr/local/bin/h265ize", "--watch", "/input", "-d", "/output"]
+ENTRYPOINT ["/usr/local/bin/h265ize", "/input", "-d", "/output"]
