@@ -1,0 +1,7 @@
+version: 2
+updates:
+  # Maintain dockerfile latest version
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "daily"
