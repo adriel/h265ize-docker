@@ -1,4 +1,4 @@
-FROM node:7-alpine
+FROM node:19-alpine
 MAINTAINER Adriel Kloppenburg
 
 LABEL h265ize_version="bleading edge" architecture="amd64"
