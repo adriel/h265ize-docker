@@ -1,7 +1,7 @@
 FROM node:19-alpine
 MAINTAINER Adriel Kloppenburg
 
-LABEL h265ize_version="bleading edge" architecture="amd64"
+LABEL h265ize_version="latest" architecture="amd64"
 
 RUN apk add --no-cache --update-cache git ffmpeg && \
     npm install FallingSnow/h265ize --global --no-optional && \
