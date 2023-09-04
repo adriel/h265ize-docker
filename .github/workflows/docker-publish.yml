@@ -11,7 +11,7 @@ jobs:
         run: echo "DATE=$(date '+%Y-%m-%d_%H.%M.%S')" >> $GITHUB_ENV
 
       - name: Check out the repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Log in to Docker Hub
         uses: docker/login-action@v2.2.0
