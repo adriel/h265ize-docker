@@ -1,4 +1,4 @@
-FROM node:21-alpine
+FROM node:22-alpine
 MAINTAINER Adriel Kloppenburg
 
 LABEL h265ize_version="latest" architecture="amd64"
